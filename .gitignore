@@ -1,0 +1,8 @@
+build/
+models/
+logs/
+tmp/
+*.bin
+*.exe
+__pycache__/
+
