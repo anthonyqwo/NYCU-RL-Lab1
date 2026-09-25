@@ -1,0 +1,70 @@
+{
+  "td_state": {
+    "train": {
+      "games": 100000,
+      "mean_score": 29754.34296,
+      "max_score": 147744,
+      "wins_2048": 60831,
+      "win_rate_2048_percent": 60.831,
+      "max_tile": 8192,
+      "elapsed_seconds": 1160.38,
+      "tile_reach_percent": {
+        "512": 97.955,
+        "1024": 88.454,
+        "2048": 60.831,
+        "4096": 13.312,
+        "8192": 0.241
+      }
+    },
+    "eval": {
+      "games": 1000,
+      "mean_score": 39824.82,
+      "max_score": 138256,
+      "wins_2048": 791,
+      "win_rate_2048_percent": 79.1,
+      "max_tile": 8192,
+      "elapsed_seconds": 13.419,
+      "tile_reach_percent": {
+        "512": 99.1,
+        "1024": 94.5,
+        "2048": 79.1,
+        "4096": 27.3,
+        "8192": 1.0
+      }
+    }
+  },
+  "td_afterstate": {
+    "train": {
+      "games": 100000,
+      "mean_score": 29774.47728,
+      "max_score": 132012,
+      "wins_2048": 57288,
+      "win_rate_2048_percent": 57.288,
+      "max_tile": 8192,
+      "elapsed_seconds": 413.846,
+      "tile_reach_percent": {
+        "512": 97.671,
+        "1024": 87.439,
+        "2048": 57.288,
+        "4096": 16.759,
+        "8192": 0.265
+      }
+    },
+    "eval": {
+      "games": 1000,
+      "mean_score": 41554.468,
+      "max_score": 130600,
+      "wins_2048": 767,
+      "win_rate_2048_percent": 76.7,
+      "max_tile": 8192,
+      "elapsed_seconds": 2.8264,
+      "tile_reach_percent": {
+        "512": 99.7,
+        "1024": 96.0,
+        "2048": 76.7,
+        "4096": 38.8,
+        "8192": 0.9
+      }
+    }
+  }
+}

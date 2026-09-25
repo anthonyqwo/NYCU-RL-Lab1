@@ -1,0 +1,110 @@
+{
+  "td_afterstate": {
+    "total_episodes": 1200000,
+    "total_elapsed_seconds": 10775.826000000001,
+    "milestones": {
+      "100000": {
+        "episodes": 100000,
+        "elapsed_seconds": 413.846,
+        "window_games": 10000,
+        "window_mean_score": 40838.06,
+        "window_max_score": 129500,
+        "overall_max_score": 132012,
+        "window_win_rate_2048": 76.88,
+        "window_rate_4096": 36.34,
+        "window_rate_8192": 0.95,
+        "window_rate_16384": 0.0
+      },
+      "500000": {
+        "episodes": 500000,
+        "elapsed_seconds": 2899.156,
+        "window_games": 10000,
+        "window_mean_score": 66887.1,
+        "window_max_score": 172960,
+        "overall_max_score": 232028,
+        "window_win_rate_2048": 87.22,
+        "window_rate_4096": 68.74,
+        "window_rate_8192": 21.04,
+        "window_rate_16384": 0.0
+      },
+      "1000000": {
+        "episodes": 1000000,
+        "elapsed_seconds": 8000.376,
+        "window_games": 10000,
+        "window_mean_score": 78712.74,
+        "window_max_score": 216844,
+        "overall_max_score": 239668,
+        "window_win_rate_2048": 89.69,
+        "window_rate_4096": 75.93,
+        "window_rate_8192": 32.79,
+        "window_rate_16384": 0.01
+      },
+      "1200000": {
+        "episodes": 1200000,
+        "elapsed_seconds": 10775.826000000001,
+        "window_games": 10000,
+        "window_mean_score": 81968.77,
+        "window_max_score": 187516,
+        "overall_max_score": 240220,
+        "window_win_rate_2048": 90.51,
+        "window_rate_4096": 77.13,
+        "window_rate_8192": 36.5,
+        "window_rate_16384": 0.0
+      }
+    }
+  },
+  "td_state": {
+    "total_episodes": 1200000,
+    "total_elapsed_seconds": 32116.84,
+    "milestones": {
+      "100000": {
+        "episodes": 100000,
+        "elapsed_seconds": 1160.38,
+        "window_games": 10000,
+        "window_mean_score": 38640.95,
+        "window_max_score": 147744,
+        "overall_max_score": 147744,
+        "window_win_rate_2048": 78.88,
+        "window_rate_4096": 25.28,
+        "window_rate_8192": 0.8,
+        "window_rate_16384": 0.0
+      },
+      "500000": {
+        "episodes": 500000,
+        "elapsed_seconds": 9142.36,
+        "window_games": 10000,
+        "window_mean_score": 66253.45,
+        "window_max_score": 182904,
+        "overall_max_score": 240032,
+        "window_win_rate_2048": 89.1,
+        "window_rate_4096": 63.5,
+        "window_rate_8192": 19.81,
+        "window_rate_16384": 0.0
+      },
+      "1000000": {
+        "episodes": 1000000,
+        "elapsed_seconds": 25154.64,
+        "window_games": 10000,
+        "window_mean_score": 79372.72,
+        "window_max_score": 220792,
+        "overall_max_score": 270572,
+        "window_win_rate_2048": 91.1,
+        "window_rate_4096": 70.82,
+        "window_rate_8192": 33.26,
+        "window_rate_16384": 0.02
+      },
+      "1200000": {
+        "episodes": 1200000,
+        "elapsed_seconds": 32116.84,
+        "window_games": 10000,
+        "window_mean_score": 82942.27,
+        "window_max_score": 196340,
+        "overall_max_score": 278904,
+        "window_win_rate_2048": 91.76,
+        "window_rate_4096": 72.55,
+        "window_rate_8192": 36.76,
+        "window_rate_16384": 0.0
+      }
+    }
+  }
+}

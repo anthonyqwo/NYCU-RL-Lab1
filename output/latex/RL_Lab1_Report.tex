@@ -252,7 +252,7 @@ update\_episode() 同樣由後往前處理；以 current.after\_state() 為待�
 
 tests/run\_tests.py 通過兩版測試：tuple 索引、對稱及重複索引梯度、popup 機率、終局價值、動作排序、反向 target、after-state 重新 greedy、權重存取、checkpoint、固定 seed 重現與錯誤參數拒絕。C++11 搭配 -Wall -Wextra -Wpedantic 編譯無警告。訓練後來源檔 SHA-256 與啟動時紀錄一致。\par
 
-{\small 棋盤沿用 sample 的 4-bit 格子，上限為 32768；若候選移動生成 65536，程式會明確停止而非靜默溢位。本次最大方塊為 8192，未觸發此限制。後續可增加評估種子、延長訓練或比較 pattern，但本文不把尚未執行的實驗當成結果。\par}
+{\small 棋盤沿用 sample 的 4-bit 格子，上限為 32768；若候選移動生成 65536，程式會明確停止而非靜默溢位。延伸實驗進一步將兩者訓練至 120 萬局（含 100 萬局里程碑），兩版評估平均分數均翻倍突破 8.3 萬分，2048 勝率全面跨越 90\%（TD-state 達 92.5\%、TD-after-state 達 90.3\%），且 8192 達成率達 36\% 以上，印證長期訓練能充分發揮 4 組 6-tuple 之表徵潛力（詳見 logs/results\_1200k.md 與 README.md）。\par}
 
 \topic{16. 重現方式與實驗產物}
 

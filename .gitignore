@@ -1,8 +1,12 @@
 build/
 models/
-logs/
+logs/*
+!logs/*.png
+!logs/results_*.json
+!logs/results_*.md
 tmp/
 *.bin
 *.exe
 __pycache__/
+
 
