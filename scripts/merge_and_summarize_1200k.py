@@ -137,15 +137,17 @@ def main():
         ax.plot(res["curve_x"], res["curve_y"], label=labels[variant], color=colors[variant], linewidth=1.5, alpha=0.9)
     
     # Add vertical lines for milestones
-    for m in [100000, 500000, 1000000, 1200000]:
-        ax.axvline(x=m, color="gray", linestyle="--", alpha=0.5, linewidth=1)
-        ax.text(m, ax.get_ylim()[0] + 5000, f" {m//1000}k", rotation=90, color="gray", fontsize=9, va="bottom")
+    for m, lbl in [(100000, "100k"), (500000, "500k"), (1000000, "1.0M (1M eps)"), (1200000, "1.2M")]:
+        ax.axvline(x=m, color="#888888", linestyle="--", alpha=0.6, linewidth=1.2)
+        ax.text(m + 8000, 12000, lbl, rotation=90, color="#555555", fontsize=10, fontweight="bold", va="bottom")
         
-    ax.set_xlabel("Training Episodes", fontsize=11)
-    ax.set_ylabel("Mean Score (per 2,000 episodes)", fontsize=11)
-    ax.set_title("2048 TD Learning Training Curves (0 to 1.2M Episodes)", fontsize=13, fontweight="bold")
-    ax.grid(True, alpha=0.25)
-    ax.legend(fontsize=10, loc="lower right")
+    ax.set_xlabel("Training Episodes", fontsize=12, fontweight="bold")
+    ax.set_ylabel("Mean Score (per 2,000 episodes)", fontsize=12, fontweight="bold")
+    ax.set_title("2048 TD Learning: 0 to 1,200,000 Episodes Training Curves", fontsize=14, fontweight="bold", pad=12)
+    ax.grid(True, alpha=0.3, linestyle=":")
+    ax.legend(fontsize=11, loc="upper left", framealpha=0.9)
+    ax.set_xlim(-20000, 1230000)
+    ax.set_ylim(0, 90000)
     
     plot_path = LOGS / "training_curve_1200k.png"
     fig.savefig(plot_path, dpi=200)

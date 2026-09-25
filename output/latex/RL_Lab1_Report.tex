@@ -208,9 +208,9 @@ update\_episode() 同樣由後往前處理；以 current.after\_state() 為待�
 
 \topic{12. 平均分數訓練曲線}
 
-\begin{center}\includegraphics[width=\linewidth]{../../logs/training_curve_20260924_202933.png}\end{center}
+\begin{center}\includegraphics[width=\linewidth]{../../logs/training_curve_1200k.png}\end{center}
 
-{\small 圖 3．每個點為連續 1,000 局的平均分數，兩條曲線各包含 100 點。資料來自逐局訓練 CSV；未進行跨點平滑。此圖呈現訓練中的表現，不是凍結權重的測試曲線。\par}
+{\small 圖 3．0 至 120 萬局完整訓練收斂曲線（每點為 2,000 局區間均分），涵蓋 100k 基礎要求、500k 中期、1M 里程碑與 1.2M 最終收斂。資料源自逐局訓練紀錄，呈現動態學習歷程。\par}
 
 \topic{13. 最終固定權重評估}
 
